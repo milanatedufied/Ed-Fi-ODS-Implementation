@@ -66,7 +66,7 @@ function Invoke-SdkGenConsole {
         [Parameter(Mandatory = $true)] [string] $apiMetadataUrl,
         [string] $buildConfiguration = "Debug"
     )
-    
+
     $sdkGenConsoleFolder = (Get-RepositoryResolvedPath "/Utilities/SdkGen/EdFi.SdkGen.Console")
     $sdkGenConsoleExecutableFolder = Join-Path -Path $sdkGenConsoleFolder -ChildPath "/bin/$buildConfiguration/netcoreapp3.1"
     $sdkGenConsoleExecutableFolderFullPath = (Join-Path $sdkGenConsoleExecutableFolder 'EdFi.SdkGen.Console.exe')
@@ -102,7 +102,7 @@ function Start-TestHarness {
         Start-Process $testHarnessExecutable -NoNewWindow
     }
 
-    $timeOut = (Get-Date).AddSeconds(60);
+    $timeOut = (Get-Date).AddSeconds(300);
 
     $response = @{}
     $isPingSuccessful = $false;
