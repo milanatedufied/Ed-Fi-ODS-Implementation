@@ -6,7 +6,7 @@
     "EdFi_Master": "server=(local);trusted_connection=True;database=master;Application Name=EdFi.Ods.WebApi"
   },
   "ApiSettings": {
-    "Mode": "sandbox",
+    "Mode": "yearspecific",
     "Engine": "SQLServer",
     "PopulatedTemplateDBTimeOutInSeconds": "600",
     "OdsTokens": [],
@@ -61,7 +61,7 @@
     "PopulatedTemplateScript": "TPDMCorePopulatedTemplate"
   },
   "Plugin": {
-    "Folder": "./Plugin",
-    "Scripts": [ "tpdm" ]
+    "Folder": "",
+    "Scripts": [ ]
   }
 }
