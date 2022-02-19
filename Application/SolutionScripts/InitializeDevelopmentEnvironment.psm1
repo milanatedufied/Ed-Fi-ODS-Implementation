@@ -143,8 +143,8 @@ function Initialize-DevelopmentEnvironment {
         }
 
         $script:result += Install-DbDeploy
-        $script:result += Reset-TestAdminDatabase
-        $script:result += Reset-TestSecurityDatabase
+#        $script:result += Reset-TestAdminDatabase
+#        $script:result += Reset-TestSecurityDatabase
 
         if (-not ($NoDeploy)) {
             $script:result += Reset-TestPopulatedTemplateDatabase
